@@ -39,13 +39,13 @@ class SignUpViewController: UIViewController {
         scrollView.layer.insertSublayer(gradientLayer1, at: 0)
         
         
-        //ラベル
-        let lable1 = UILabel()
-        lable1.frame = CGRect(x: 35, y: 20, width: 70, height: 20)
-        lable1.text = "Adful"
-        lable1.textColor = colors.black
-        lable1.font = UIFont.systemFont(ofSize: 25, weight: .heavy)
-        scrollView.addSubview(lable1)
+        //uiimage
+        let adfulImageView = UIImageView()
+        let image = UIImage(named: "logo")
+        adfulImageView.image = image
+        adfulImageView.frame = CGRect(x: 35, y: 15, width: 70, height: 30)
+        adfulImageView.contentMode = .scaleAspectFill
+        scrollView.addSubview(adfulImageView)
         
         //Adfulとは?
         let adfulButton = UIButton(type: .system)
